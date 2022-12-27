@@ -14,7 +14,9 @@ module.exports = {
     }
 
     if (!token) {
-      return req;
+      
+      return req
+
     }
 
     try {
