@@ -51,10 +51,10 @@ const resolvers = {
                             _id: context.user._id
                         },
                         {
-                            $push:{savedBooks:bookData}
+                            $push:{savedBooks: bookData}
                         },
                         {
-                            new: true
+                            new: true, runValidators: true
                         }
                     )
                     return updatedUser;
