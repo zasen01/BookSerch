@@ -15,7 +15,6 @@ type Book {
   authors: [String]
   description: String
   image: String
-  link: String
   title: String!
 }
 
@@ -24,13 +23,12 @@ type Auth {
   user: User
 }
 
-input BookInput{
-  bookId: String!
+input BookInput {
+  bookId: String
   authors: [String]
-  description: String!
+  description: String
   image: String
-  link: String
-  title: String!
+  title: String
 
 }
 
